@@ -37,11 +37,11 @@ public class Aplic {
         
         do{
             
-            System.out.print("1- Exibir Nota das Provas/Trabalhos");
-            System.out.print("2- Exibir Média dos Trabalhos");
-            System.out.print("3- Exibir Média Final");
-            System.out.print("4- Sair");
-            System.out.print("      Digite a opcão:");
+            System.out.println("1- Exibir Nota das Provas/Trabalhos");
+            System.out.println("2- Exibir Média dos Trabalhos");
+            System.out.println("3- Exibir Média Final");
+            System.out.println("4- Sair");
+            System.out.println("      Digite a opcão:");
             
             System.out.print("      Digite a opção: ");
             escolha = entrada.nextInt();

@@ -21,6 +21,7 @@ public class FuncionarioMensalista extends Funcionario{
         return (valSalMin * numSalMin);
     }
 
+    
 
     }
     

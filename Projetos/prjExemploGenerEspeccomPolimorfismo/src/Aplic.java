@@ -24,7 +24,7 @@ public class Aplic {
         
         FuncionarioComissionado funcCom = new FuncionarioComissionado(3030,
                                                             "Matheus Favara",
-                                                            "18/02/2000", 0.30
+                                                            "18/02/2000", 30
                                                                 ); 
         
     
@@ -32,6 +32,7 @@ public class Aplic {
         funcMen.setNumSalMin(2);
         funcHor.setCargo("Professor");
         funcMen.setCargo("Atendente");
+        funcCom.setCargo("Vendedor");
         funcCom.setSalBase(1200);
         funcCom.addVendas(6000);
         
@@ -53,7 +54,7 @@ public class Aplic {
         System.out.println("\n\nNome funcionario mensalista    => " + funcMen.getNome());
         System.out.println("Numero Registro     => " + funcMen.getRegistro());
         System.out.println("Adimissão   => " + funcMen.getDtAdmisao());
-                System.out.println("Cargo   => " + funcMen.getCargo());
+        System.out.println("Cargo   => " + funcMen.getCargo());
         System.out.println("Salário Bruto   => " + 
                            df.format(funcMen.calcSalBruto()));
         System.out.println("Desconto        => " +
@@ -65,7 +66,8 @@ public class Aplic {
         System.out.println("\n\nNome funcionario Comissionado    => " + funcCom.getNome());
         System.out.println("Numero Registro     => " + funcCom.getRegistro());
         System.out.println("Adimissão   => " + funcCom.getDtAdmisao());
-        System.out.println("Taxa de comissão     => " + funcCom.getTaxaComissao());
+        System.out.println("Cargo   => " + funcCom.getCargo());
+        System.out.println("Taxa de comissão     => " + funcCom.getTaxaComissao()+ "%");
         System.out.println("Gratificação    => " +
                            df. format(funcCom.calcGratificacao()));
         System.out.println("Salário Bruto   => " + 

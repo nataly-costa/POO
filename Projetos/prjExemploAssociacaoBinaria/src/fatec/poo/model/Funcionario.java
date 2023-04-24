@@ -10,6 +10,8 @@ public abstract class Funcionario {
     private String dtAdmissao;
     private String cargo;
     private Departamento departamento;
+    
+    
         
     public Funcionario(int registro, String nome, String dtAdmissao) {
         this.registro = registro;

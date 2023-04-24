@@ -55,15 +55,21 @@ public class Aplic {
        //1 objeto da classe Departamento  
        funcCom.setDepartamento(objDep2);
        
-      
-       //Estabelecendo a associação binária entre um
-       //objeto da classe Departamento com 1 ou mais (1..*)
-       //objetos da classe FuncionarioHorista, FuncionarioMensalista
-       //e FuncionarioComissionado  
        System.out.println("Funcionario " + funcHor.getNome() + "trabalha no departamento " + funcHor.getDepartamento().getNome());
        System.out.println("Funcionario " + funcMen.getNome() + "trabalha no departamento " + funcMen.getDepartamento().getNome());
        System.out.println("Funcionario " + funcCom.getNome() + "trabalho no departamento " + funcCom.getDepartamento().getNome());
        
+       //Estabelecendo a associação binária entre um
+       //objeto da classe Departamento com 1 ou mais (1..*)
+       //objetos da classe FuncionarioHorista, FuncionarioMensalista
+       //e FuncionarioComissionado  
+       objDep1.addFuncionario(funcHor);
+       objDep1.addFuncionario(funcMen);
+       objDep1.addFuncionario(funcCom);
+       objDep1.listaFuncionario();
+       
+       objDep2.addFuncionario(funcCom);
+       objDep2.listaFuncionario();
        
     }    
 }
